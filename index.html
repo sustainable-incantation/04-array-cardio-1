@@ -153,7 +153,9 @@
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
     const transportation = data.reduce((obj, item) => {
-        if(!obj[item]){
+
+        //if obj[item] is not defined then define and initialise it with 0
+        if (!obj[item]){
           obj[item] = 0;
         }
 
