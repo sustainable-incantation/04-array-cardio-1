@@ -112,7 +112,7 @@
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
-    const category = document.querySelector('.mw-category');
+    //const category = document.querySelector('.mw-category');
     //const links = category.querySelectorAll('a');
 
     /*
@@ -123,20 +123,26 @@
     2. [...category.querySelectorAll('a')];  //using the spread operator of ES6
     */
     //const links = Array.from(category.querySelectorAll('a'));
-    const links = [...category.querySelectorAll('a')];
+    //const links = [...category.querySelectorAll('a')];
     /*
     querySelector and querySelectorAll can be applied to document as well as other variables
     which in this case is category
     */
 
-    const de = links
-                .map(link => link.textContent)
-                .filter(text => text.includes('de'));
-    console.log(de);
+    //const de = links
+    //            .map(link => link.textContent)
+    //            .filter(text => text.includes('de'));
+    //console.log(de);
 
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+
+    const alpha = people.sort((firstOne, secondOne) => {
+
+      console.log(firstOne);
+
+    });
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
