@@ -113,8 +113,16 @@
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
     const category = document.querySelector('.mw-category');
-    const links = category.querySelectorAll('a');
+    //const links = category.querySelectorAll('a');
 
+    /*
+    querySelectorAll returns a NodeList. In order to use array methods on it,
+    we first need to convert the NodeList into an Array.
+    This can be done in 2 ways:
+    1. Array.from(category.querySelectorAll('a'));
+    2. [...category.querySelectorAll('a')];  //using the spread operator of ES6
+    */
+    const links = Array.from(category.querySelectorAll('a'));
 
 
     console.log(links);
