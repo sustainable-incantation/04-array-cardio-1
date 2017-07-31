@@ -33,7 +33,15 @@
     // 1. Filter the list of inventors for those who were born in the 1500's
       const inFifteenHundred = inventors.filter((inventor) => {
         if(inventor.year >= 1500 && inventor.year < 1600){
+
           return true;
+          /*
+            <>return true;</> signals the filter function to keep the object
+            in the array i.e. inFifteenHundred.
+
+            You can also use an else condition to return false; but that's
+            unnecessary.
+          */
         }
       });
       console.log(inFifteenHundred);
