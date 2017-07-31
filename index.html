@@ -142,13 +142,7 @@
       const [firstLast, firstFirst] = firstOne.split(', ');
       const [secondLast, secondFirst] = secondOne.split(', ');
 
-      
-
-      if(firstLast > secondLast){
-        return 1;
-      } else {
-        return -1;
-      }
+      return firstLast > secondLast ? 1 : -1;
 
     });
 
