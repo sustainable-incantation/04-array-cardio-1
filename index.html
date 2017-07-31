@@ -139,12 +139,12 @@
     // Sort the people alphabetically by last name
 
     const alpha = people.sort((firstOne, secondOne) => {
-      const firstOneParts = firstOne.split(', ');
-      const secondOneParts = secondOne.split(', ');
+      const [firstLast, firstFirst] = firstOne.split(', ');
+      const [secondLast, secondFirst] = secondOne.split(', ');
 
+      
 
-
-      if(firstOneParts[0] > secondOneParts[0]){
+      if(firstLast > secondLast){
         return 1;
       } else {
         return -1;
