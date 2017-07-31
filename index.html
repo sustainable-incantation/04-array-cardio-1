@@ -65,6 +65,7 @@
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
 
+    /*
     const sortByBirth = inventors.sort(function(firstInventor, secondInventor) {
       if(firstInventor.year >= secondInventor.year){
         return 1;
@@ -72,7 +73,10 @@
         return -1;
       }
     });
+    */
 
+    const sortByBirth = inventors.sort((firstPerson, secondPerson) =>
+     firstPerson.year > secondPerson.year ? 1 : -1);
     console.table(sortByBirth);
 
 
