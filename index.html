@@ -69,8 +69,10 @@
     const sortByBirth = inventors.sort(function(firstInventor, secondInventor) {
       if(firstInventor.year >= secondInventor.year){
         return 1;
+        //return 1 signifies, they are already in correct order.
       } else {
         return -1;
+        //return -1 signifies, they are not in correct order. Thus swap the elements.
       }
     });
     */
@@ -102,7 +104,7 @@
       const secondPersonYearsLived = (secondPerson.passed - secondPerson.year);
 
       return firstPersonYearsLived >= secondPersonYearsLived ? -1 : 1;
-      
+
     });
 
     console.table(inventorsByYearsLived);
