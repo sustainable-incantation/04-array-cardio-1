@@ -139,10 +139,20 @@
     // Sort the people alphabetically by last name
 
     const alpha = people.sort((firstOne, secondOne) => {
-      const parts = firstOne.split(', ');
-      console.log(parts);
+      const firstOneParts = firstOne.split(', ');
+      const secondOneParts = secondOne.split(', ');
+
+
+
+      if(firstOneParts[0] > secondOneParts[0]){
+        return 1;
+      } else {
+        return -1;
+      }
 
     });
+
+    console.log(alpha);
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
