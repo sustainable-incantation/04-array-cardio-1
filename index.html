@@ -124,6 +124,10 @@
     */
     //const links = Array.from(category.querySelectorAll('a'));
     const links = [...category.querySelectorAll('a')];
+    /*
+    querySelector and querySelectorAll can be applied to document as well as other variables
+    which in this case is category
+    */
 
     const de = links
                 .map(link => link.textContent)
