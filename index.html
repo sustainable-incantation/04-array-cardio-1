@@ -48,6 +48,16 @@
     // Array.prototype.map()
     // 2. Give us an array of the inventors' first and last names
 
+    /*
+    Difference between filter and map:
+
+      1. map function takes in an array and returns another array of the same length.
+      Whereas filter function may or may not return an array of same length.
+
+      2. Also map function can be looked upon as a factory machine which takes in
+      the raw-materials and modify them and then returns the modified raw-materials.
+      Whereas filter function returns all or some of the raw-material (without modifying it)
+    */
     const firstAndLast = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
 
     console.table(firstAndLast);
